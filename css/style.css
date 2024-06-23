@@ -5,12 +5,13 @@ p {
 body {
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
     display: flex;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -36,3 +37,53 @@ body {
     transition: 0.1s;
     background-color: rgb(246, 255, 240);
 }
+
+.mid {
+    color: white;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100px;
+}
+
+.mid2 {
+    color: white;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content {
+    border: 5px 20%;
+    border-width: 5px;
+    border-radius: 60%;
+    border-style: dotted;
+    border-color: rgb(29, 29, 29);
+}
+
+.middlebutton {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    width: 300px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    .mid {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+    }
+  }
