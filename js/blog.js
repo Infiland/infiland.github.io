@@ -2,7 +2,7 @@ const blogPosts = [
     {
         id: 1,
         title: "First Post",
-        date: "2024-07-05",
+        date: "5th July 2024",
         content: `
 ### Welcome to my first post on here!
 
@@ -10,8 +10,9 @@ I have decided to update this website since it has been only used to host images
 
 After this code refactor, the code is absolutely terrible so I'll try to work on it for a couple of days, but this will do.
 
-All of these blogs are under a javascript script (that I have definitely made) to dynamically fill the page with stuff that I am thinking about!
-But that also means it's under only one file so it's going to be big if I use it too much
+All of these posts are under a javascript script (that I have definitely made) to dynamically fill the page with stuff that I am thinking about!
+This is also a terrible solution as I don't have any backend server but oh well, this will do for now.
+It also means it's under only one file so it's going to be big if I use it too much...
 
 But it supports markup which is cool :)
 
@@ -29,7 +30,7 @@ Thank you!
     }/*,
     {
         id: 2,
-        title: "Blog2",
+        title: "Asteroids ++",
         date: "2024-07-10",
         content: `
         `

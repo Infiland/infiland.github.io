@@ -320,6 +320,15 @@ main {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.seperator {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 0px 20px;
+    width: 62.5%;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
 .btn, .read-more {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
