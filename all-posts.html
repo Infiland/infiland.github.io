@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/blog.js" defer></script>
+    <title>All Posts - Infiland's Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="top_nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all-posts.html">Posts</a></li>
+                <li><a href="index.html#work">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="all-posts" class="section">
+            <h1 class="mid2">All Posts</h1>
+            <div id="all-blog-posts" class="blog-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Infiland. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function displayAllBlogPosts() {
+            const blogPostsContainer = document.getElementById('all-blog-posts');
+            blogPosts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.classList.add('blog-post-card');
+                const snippet = createSnippet(post.content);
+                postElement.innerHTML = `
+                    <h3 class="post-title"><a href="blog-post.html?id=${post.id}">${post.title}</a></h3>
+                    <p class="post-date"><em>${post.date}</em></p>
+                    <p class="post-snippet">${snippet}</p>
+                    <a href="blog-post.html?id=${post.id}" class="read-more">Read More</a>
+                `;
+                blogPostsContainer.appendChild(postElement);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', displayAllBlogPosts);
+    </script>
+</body>
+</html>
