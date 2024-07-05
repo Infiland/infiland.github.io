@@ -234,7 +234,6 @@ footer {
 html, body {
     height: 100%;
     margin: 0;
-    
 }
 
 body {
@@ -243,7 +242,6 @@ body {
     flex-direction: column;
     scrollbar-width: none; /* Only for Firefox */
     -ms-overflow-style: none;
-    
 }
 
 main {
@@ -327,6 +325,11 @@ main {
     margin: 20px auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     pointer-events: auto;
+}
+
+#mainpost {
+    padding: 0;
+    border-bottom: 250px;
 }
 
 .seperator {

@@ -101,7 +101,17 @@ but one thing is for certain is that I wanted some kind of free game on Steam.
 
 This post is long enough, future development posts coming up later! Thanks for reading!
         `
-    }
+    }/*,
+    {
+        id: 3,
+        title: "Future Post",
+        date: "6th July 2024",
+        content: `
+### This is a futuristic post
+
+Beep beep beeeep
+        `
+    }*/
 ];
 
 blogPosts.sort((a, b) => b.id - a.id);
