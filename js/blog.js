@@ -6,7 +6,8 @@ const blogPosts = [
         content: `
 ### Welcome to my first post on here!
 
-I have decided to update this website since it has been only used to host images that I use for [Asteroids ++](https://store.steampowered.com/app/2407300/Asteroids/)
+I've have decided to update this website since it has been only used to host images that I use for [Asteroids ++](https://store.steampowered.com/app/2407300/Asteroids/)
+ However I might move all of the images to another server or something but this will do.
 
 After this code refactor, the code is absolutely terrible so I'll try to work on it for a couple of days, but this will do.
 
@@ -27,14 +28,80 @@ But it supports markup which is cool :)
 
 Thank you!
         `
-    }/*,
+    },
     {
         id: 2,
-        title: "Asteroids ++",
-        date: "2024-07-10",
+        title: "Asteroids ++ Development 1",
+        date: "5th July 2024",
         content: `
+### Hello everyone!
+
+I've recently self-developed and published my second commercial game on Steam, [Asteroids ++](https://store.steampowered.com/app/2407300/Asteroids/) and for this
+        post I decided to give a little bit of info on how I developed it, the ultimate goals, changes from the original plans for the game and the aftermath.
+
+<img src="https://i.imgur.com/Hjhsi2k.png" alt="Asteroid" width="640" height="360">
+
+<i>Asteroids ++ Gameplay Chaos</i>
+
+I reckon this post alone is going to be pretty long, so I'll make a couple of parts of this. I could do a similar thing for [The Colorful Creature](https://store.steampowered.com/app/1651680/The_Colorful_Creature/) but that one is
+        just much much longer.
+
+### Before Development
+
+Back in my humble days, I was learning how to use GameMaker, a free to use 2D game engine. One of the games I made with it was "Space Shooter 2" <i>(or SSU)</i>, which was an Asteroids
+clone that I made to try to learn the engine. At the time I was not even in highschool! 
+
+But it was a first game that I coded something myself without too much guidance of tutorials. Not that tutorials are bad, but the previous project "Space Shooter 1" was just
+a complete copy of [Shaun Spalding's Asteroid Tutorial](https://www.youtube.com/playlist?list=PLPRT_JORnIuo-DyoWbB7LBrhqlJnsltJq), with just some minor additions like lives flying across the screen
+
+
+<img src="https://i.imgur.com/Yyr4itu.png" alt="Asteroid" width="640" height="360">
+
+<i>Space Shooter 1</i>
+
+Space Shooter 1 was awful, had terrible turning controls, the game was running at locked 30 FPS, your game could softlock if you went outside the boundaries, the
+pause screen was causing a memory leak, it was truly terrible, but I guess that's how real game development starts, because all my previous projects were made in Scratch (yep...)
+
+So I decided in my younger years to make a sequel, to fix all of these issues and ultimately make a 'better' game
+
+### Space Shooter 2
+
+<img src="https://i.imgur.com/aCb519m.png" alt="Asteroid" width="640" height="360">
+
+<i>Space Shooter 2's World Map</i>
+
+Space Shooter 2 compared to it's incredible predecesor title was much better. If only IGN could recognize this underrated masterpiece and give it a 10/10.
+
+- It has a better control scheme, you could turn faster and actually stop your ship, but it was still bad.
+- It had a shop where you could buy upgrades for your gun and autogun
+- Had a save/load feature (but it broke with every update of the game)
+
+But the code is still absolute dogshit, however I had an idea where in each world you visit, you would encounter a special Asteroid type.
+
+In the second world, you would encounter "red asteroids" which would be faster than regular asteroids. I had plans and concepts to introduce new types of Asteroids but ultimately
+I never finished more than 2 worlds because that's how bad the code was. If you want to look at it, [I've open sourced this game.]() Don't bother fixing it.
+
+### Free to Play experiment on Steam
+
+While I was gathering a small audiance that was interested in my game development, a couple of people joked around for a third game, and I also joked about it since making an Asteroids game sounds
+pretty dumb for a more serious project. However many years later, while developing TCC and releasing it to Steam in Early Access in 2021, I've always wondered since then how a free to play game could work out
+on Steam.
+
+Having all of the thrown out ideas that I had for Space Shooter 2, and after gathering much more game development and game design knowledge a free-to-play Asteroids game doesn't sound all that bad. It took me
+a while to consider this idea but on April of 2022, I've finally decided to work on...
+
+### Space Shooter Remaster!
+
+<img src="https://i.imgur.com/NvB1CU1.png" alt="Asteroid" width="640" height="360">
+
+Or at least, that was the name of the game...
+
+Unsure at this point if this was a serious project or not, I started to develop it regardless since I can't just judge from the very beginning if it's going to be on Steam or not,
+but one thing is for certain is that I wanted some kind of free game on Steam.
+
+This post is long enough, future development posts coming up later! Thanks for reading!
         `
-    }*/
+    }
 ];
 
 blogPosts.sort((a, b) => b.id - a.id);
