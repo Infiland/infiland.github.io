@@ -101,17 +101,53 @@ but one thing is for certain is that I wanted some kind of free game on Steam.
 
 This post is long enough, future development posts coming up later! Thanks for reading!
         `
-    }/*,
+    },
     {
         id: 3,
-        title: "Future Post",
-        date: "6th July 2024",
+        title: "GM2Godot",
+        date: "6th August 2024",
         content: `
-### This is a futuristic post
+### I am on a great mission!
 
-Beep beep beeeep
+Wow, first blog in a while, took me a month!
+
+Anyway, I've had my github up and running for a year or so, developing amazing games, but so far I was only putting up code of my games, which isn't inherently bad, but I wanted to put out some kind of
+a tool. But there are so many useful tools out there!
+
+It is hard to come up with an original concept, if you wanted to make an image editor program, you have Photoshop, or GIMP. If you wanted to make your own audio program, you
+have audacity, and so on...
+
+So I wanted to make a tool that benefits me and you guys, and that is GM2Godot!
+
+<img src="https://github.com/user-attachments/assets/335ec730-9bdb-4500-ac6c-5690d386a185" alt="GM2Godot" width="640" height="360">
+
+## I am developing GM2Godot
+
+GM2Godot is my very first open source project that isn't actually a game but rather a tool!
+
+Basically the idea of this is for users being able to convert GameMaker projects to Godot.
+Sounds pretty impossible considering it would mean I would have to transpile GML to GDScript, which is true.
+
+However for now I was thinking to only port assets, so sprites, sounds etc, and the easy stuff.
+
+## What it is and what it isn't
+When presenting this tool, I've gotten a couple of questions what the tool really is and what it is supposed to be, so I'll break it down.
+
+### GM2Godot is:
+
+- A tool that ports assets from GameMaker to Godot
+- Is for people who don't want to port the GameMaker project to Godot from scratch
+- Not perfect. It will make mistakes.
+
+### GM2Godot isn't:
+
+- For people who expect everything will work perfectly.
+- A compiler that can seamlessly transpile GML to GDScript (yet)
+- This isn't a tool which converts exported GML projects to Godot, use UndertaleToolMod instead
+
+It is open source on github, and written in python to make it easy as possible to work with, [check it out](https://github.com/Infiland/GM2Godot)
         `
-    }*/
+    }
 ];
 
 blogPosts.sort((a, b) => b.id - a.id);
