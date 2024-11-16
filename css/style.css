@@ -19,7 +19,6 @@ main {
     padding: 20px;
 }
 
-/* Typography */
 .mid, .mid2 {
     text-align: center;
     margin-bottom: 1rem;
@@ -421,12 +420,12 @@ h1, h2, h3, p {
     position: fixed;
     top: 0;
     right: 0;
-    width: 10px; /* Width of the scrollbar */
+    width: 10px;
     height: 100vh;
-    z-index: 9999; /* Ensure it's above other content */
-    pointer-events: none; /* Allow interaction with content underneath */
+    z-index: 9999;
+    pointer-events: none;
   }
   
   #scrollbar-container:hover {
-    pointer-events: auto; /* Allow interaction when hovering */
+    pointer-events: auto;
   }

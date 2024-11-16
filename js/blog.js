@@ -147,6 +147,58 @@ When presenting this tool, I've gotten a couple of questions what the tool reall
 
 It is open source on github, and written in python to make it easy as possible to work with, [check it out](https://github.com/Infiland/GM2Godot)
         `
+    },
+    {
+        id: 4,
+        title: "Website Rebranding",
+        date: "16th November 2024",
+        content: `
+## No blogs in 3 months, what is up with that?
+
+I like writing sometimes, and I do want to write some thoughts and pages, but it is impossible doing so in this website without major hassle.
+
+I thought the solution for a website which is static would be to have a 'blog.js' file and write all of my blogs down, but recently I was thinking to
+more and more move my website to be dynamic. Imagine posts like this except you can post comments!
+
+Before I start, I'm going to talk about what I plan to use in the future, but these tools/apps/platforms did not sponsor me in any way.
+
+## New website from the ground up
+
+I was thining to remake this website to be more than just a static website, now with playable games, blogs with comments, donation page, tools, portfolio so I could get a job or
+just perhaps promote it as a freelancer to work for clients, and an ability for other moderators to post news. I would also like to make blogs using my own website, 
+so a tool would be integrated to write .md based blogs using my own tool on my own website.
+
+The tools I am thinking to use for all of this is bootstrap, php, laravel, mysql, claude for AI, and various APIs, which would give me much more freedom.
+
+## Different Domain
+
+A different domain name would be needed for this change, I wouldn't have infiland.github.io because it is very ugly. I've settled already on a new domain 
+with friends and collegues, and it is so good that I won't share it until I am ready to publish the website. I've got advice that I should get a name from namecheap, I've tested
+various domain websites like goDaddy but I've always found namecheap to be a good candidate for me, so I've settled for that.
+
+## Web Hosting
+
+This one is much more difficult to find, I need a reliable web hosting which doesn't increase the price because of bloating deals with useless perks.
+Hostinger, Siteground and Bluehost seem like okay options for me, but sorta rely on wordpress too much, which sounds boring to use.
+
+## Playable Games
+
+I want demos and free games to be playable on my website, I don't think this is too big of a deal since the games are really easy to run, and only use HTML, CSS AND JS,
+which can be already ran on static websites.
+
+## Tools
+
+I would make quick tools like translation tools, blog and personal tools so I can accelerate my productivity.
+
+## Donation Page
+
+I want to make a website which has a donation page without youtube just taking my money away. I am thinking to setup stripe and paypal APIs, and then give
+perks to people who have donated.
+
+## When is it done?
+
+I'm going to aim for 2025, see if I can port all of the images on the website, all of the blogs, everything, and make it a 100X better!
+        `
     }
 ];
 
@@ -162,7 +214,7 @@ function createSnippet(content, maxLength = 100) {
 
 function displayBlogPosts() {
     const blogPostsContainer = document.getElementById('blog-posts');
-    const postsToShow = blogPosts.slice(0, 3); // Limit to 3 posts
+    const postsToShow = blogPosts.slice(0, 3);
     postsToShow.forEach(post => {
         const postElement = document.createElement('div');
         postElement.classList.add('blog-post');
@@ -200,7 +252,6 @@ function displaySinglePost() {
     }
 }
 
-// Call the appropriate function based on the current page
 if (document.getElementById('blog-posts')) {
     document.addEventListener('DOMContentLoaded', displayBlogPosts);
 } else if (document.getElementById('blog-post-content')) {

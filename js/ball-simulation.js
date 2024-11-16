@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
       balls.push({ element: ball, speed });
       ballContainer.appendChild(ball);
   
-      // Add event listeners for dragging
       ball.addEventListener('mousedown', startDragging);
       ball.addEventListener('touchstart', startDragging);
     }
