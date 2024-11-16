@@ -164,7 +164,7 @@ Before I start, I'm going to talk about what I plan to use in the future, but th
 
 ## New website from the ground up
 
-I was thining to remake this website to be more than just a static website, now with playable games, blogs with comments, donation page, tools, portfolio so I could get a job or
+I was thinking to remake this website to be more than just a static website, now with playable games, blogs with comments, donation page, tools, portfolio so I could get a job or
 just perhaps promote it as a freelancer to work for clients, and an ability for other moderators to post news. I would also like to make blogs using my own website, 
 so a tool would be integrated to write .md based blogs using my own tool on my own website.
 
