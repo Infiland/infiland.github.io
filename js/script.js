@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    //Ranndom Image
     const imageContainer = document.getElementById('random-image-container');
     const randomNumber = Math.floor(Math.random() * 9) + 1;
     const imagePath = `gameimages/asteroids/asteroids/1/${randomNumber}.gif`;
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     imageContainer.appendChild(img);
 
-    //Custom Scrollbar
         const scrollbarContainer = document.getElementById('scrollbar-container');
         const scrollThumb = document.createElement('div');
         scrollThumb.id = 'scroll-thumb';
@@ -27,9 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', updateScrollThumb);
         window.addEventListener('resize', updateScrollThumb);
         
-        updateScrollThumb(); // Initial call
+        updateScrollThumb();
       
-        // Optional: Add drag functionality to the scroll thumb
         let isDragging = false;
         let startY;
         let startScroll;
