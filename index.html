@@ -3,63 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.0/css/perfect-scrollbar.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
-    <script src="js/scrollsave.js"></script>
-    <script src="js/blog.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="js/script.js" defer></script>
-    <script src="js/ball-simulation.js"></script>
-    <title>Infiland's Website</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7108130195717311"
-     crossorigin="anonymous"></script>
+    <title>Redirecting to New Website</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(
+                45deg,
+                #000000,
+                #1a0000,
+                #260000,
+                #1a0000,
+                #000000
+            );
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeInDown 0.5s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .redirect-btn {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+        }
+
+        .redirect-btn:hover {
+            background-color: #cc0000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+        }
+
+        .archive-btn {
+            background-color: transparent;
+            color: white;
+            border: 2px solid #ff0000;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.1);
+        }
+
+        .archive-btn:hover {
+            background-color: rgba(255, 0, 0, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.2);
+        }
+    </style>
 </head>
-
 <body>
-    <div id="scrollbar-container"></div>
-    <div id="ball-container"></div>
-    <header>
-        <nav>
-            <ul class="top_nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="all-posts.html">Posts</a></li>
-                <li><a href="my-work.html">My Work</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="seperator">
-        <section id="home">
-            <h1 class="mid">I am Infiland!</h1>
-            <div class="content">
-                <h2 class="mid2" style="color:yellow">Work in progress, still using this website for image hosting, more coming soon!</h2>
-            </div>
-        </section>
+    <div class="container">
+        <h1>NEW WEBSITE</h1>
+        <div class="buttons">
+            <a href="https://infi.land" class="redirect-btn">Go to new website</a>
+            <a href="index_old.html" class="archive-btn">View Archive</a>
+        </div>
     </div>
 
-    <div class="seperator">
-        <section id="work">
-            <h2 class="mid2">My Work</h2>
-            <div class="middlebutton">
-                <a href="https://github.com/Infiland" class="btn">Github</a>
-                <a href="https://store.steampowered.com/search/?developer=Infiland" class="btn">Steam</a>
-                <a href="https://infiland.itch.io/" class="btn">Itch.io</a>
-            </div>
-        </section>
-    </div>
-    
-    <div class="seperator">
-        <section id="posts">
-            <h2 class="mid2">Recent Posts</h2>
-            <div id="blog-posts"></div>
-        </section>
-
-        <div id="random-image-container" class="mid2"></div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Infiland. All rights reserved.</p>
-    </footer>
-</div>
+    <script>
+        // Automatically redirect after 5 seconds
+        setTimeout(() => {
+            window.location.href = 'https://infi.land';
+        }, 5000);
+    </script>
 </body>
 </html>
